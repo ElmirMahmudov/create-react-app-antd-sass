@@ -1,0 +1,26 @@
+{
+  "name": "responsive-with-ant",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.6.1",
+    "node-sass": "^4.9.0",
+    "react": "^16.4.0",
+    "react-app-rewire-less": "^2.1.1",
+    "react-app-rewire-sass-modules": "^1.1.5",
+    "react-app-rewired": "^1.5.2",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4",
+    "sass-loader": "^7.0.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "theme": "./theme.js",
+  "devDependencies": {
+    "babel-plugin-import": "^1.7.0"
+  }
+}
