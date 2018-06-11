@@ -18,6 +18,8 @@ class Login extends React.Component {
 
             })
 
+            this.props.history.push('/news')
+
         })()
     }
     render() {

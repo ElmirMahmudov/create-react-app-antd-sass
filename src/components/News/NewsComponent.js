@@ -1,10 +1,11 @@
 import React from 'react';
-import LoginForm from './components/LoginForm';
+import NewsList from './components/NewsList';
 import { Row, Col, Layout } from 'antd'
 
 const { Header, Content } = Layout;
 
-const LoginComponent = (props) => {
+const NewsComponent = (props) => {
+    
     return (
         <Layout>
             <Header />
@@ -14,7 +15,7 @@ const LoginComponent = (props) => {
                     </Col>
                     <Col xs={8}>
                         <h1>
-                            Login
+                            News
                         </h1>
                     </Col>
                 </Row>
@@ -22,7 +23,7 @@ const LoginComponent = (props) => {
                     <Col xs={2} sm={4} md={6} lg={8}>
                     </Col>
                     <Col xs={20} sm={16} md={12} lg={8}>
-                        <LoginForm getInputValuesOnSubmit={props.getInputValuesOnSubmit}/>
+                        <NewsList posts={props.posts}/>
                     </Col>
                     <Col xs={2} sm={4} md={6} lg={8}>
                     </Col>
@@ -31,4 +32,4 @@ const LoginComponent = (props) => {
         </Layout>
     )
 }
-export default LoginComponent;
+export default NewsComponent;

@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import Login from './containers/Login/Login';
-import { Layout } from 'antd';
+import Routes from "./Routes";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Layout>
-          <Login/>
-        </Layout>
+        <Routes/>
       </div>
     );
   }
