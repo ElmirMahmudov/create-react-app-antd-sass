@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Layout, Row, Col, Button } from 'antd';
-
-const { Header, Footer, Content } = Layout;
+import Login from './containers/Login/Login';
+import { Layout } from 'antd';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Layout>
-          Hello World!!!
+          <Login/>
         </Layout>
       </div>
     );
