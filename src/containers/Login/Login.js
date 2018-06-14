@@ -3,21 +3,20 @@ import LoginComponent from '../../components/Login/LoginComponent';
 class Login extends React.Component {
     constructor(props) {
         super(props);
-    }
-    state = {
-        email: null,
-        password: null
+        this.state = {
+            email: null,
+            password: null
+        }
     }
     getInputValuesOnSubmit = (values) => {
         (async () => {
-            await this.setState((prevState, props) => {
+            await this.setState((prevState) => {
                 return {...prevState,
                     email: values.email,
                     password: values.password
                 }
 
             })
-
             this.props.history.push('/news')
 
         })()

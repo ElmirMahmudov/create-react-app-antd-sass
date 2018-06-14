@@ -9,7 +9,8 @@ module.exports = function override(config, env) {
     config = rewireLess.withLoaderOptions({
         modifyVars: {
             "@primary-color": "#1DA57A",
-            "@btn-font-weight": "400"
+            "@btn-font-weight": "400",
+            "@btn-border-radius-base": "0px"
         },
     })(config, env);
     config = rewireSass(config, env);
