@@ -1,5 +1,6 @@
 import React from 'react';
 import LoginComponent from '../../components/Login/LoginComponent';
+import * as ROUTES from '../../constants/routes';
 class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -17,7 +18,7 @@ class Login extends React.Component {
                 }
 
             })
-            this.props.history.push('/news')
+            this.props.history.push(ROUTES.NEWS)
 
         })()
     }

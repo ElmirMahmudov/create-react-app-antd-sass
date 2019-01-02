@@ -1,15 +1,15 @@
 import React from 'react';
 import NewsList from './components/NewsList';
 import { Row, Col, Layout } from 'antd'
-
-const { Header, Content } = Layout;
+import MyHeader from '../Reuseable/Header';
+import MyContent from '../Reuseable/Content';
 
 const NewsComponent = (props) => {
     
     return (
         <Layout>
-            <Header />
-            <Content>
+            <MyHeader/>
+            <MyContent>
                 <Row>
                     <Col xs={8}>
                     </Col>
@@ -28,7 +28,7 @@ const NewsComponent = (props) => {
                     <Col xs={2} sm={4} md={6} lg={8}>
                     </Col>
                 </Row>
-            </Content>
+            </MyContent>
         </Layout>
     )
 }

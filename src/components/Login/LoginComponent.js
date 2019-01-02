@@ -1,14 +1,14 @@
 import React from 'react';
 import LoginForm from './components/LoginForm';
 import { Row, Col, Layout } from 'antd'
-
-const { Header, Content } = Layout;
+import MyHeader from '../Reuseable/Header';
+import MyContent from '../Reuseable/Content';
 
 const LoginComponent = (props) => {
     return (
         <Layout>
-            <Header />
-            <Content>
+            <MyHeader/>
+            <MyContent>
                 <Row>
                     <Col xs={8}>
                     </Col>
@@ -27,7 +27,7 @@ const LoginComponent = (props) => {
                     <Col xs={2} sm={4} md={6} lg={8}>
                     </Col>
                 </Row>
-            </Content>
+            </MyContent>
         </Layout>
     )
 }

@@ -1,7 +1,8 @@
 import React from "react";
-import { BrowserRouter ,Route, Redirect } from "react-router-dom";
+import { BrowserRouter ,Route, Redirect, Switch } from "react-router-dom";
 import * as ROUTES from './constants/routes';
 
+import Home from './containers/Home/Home';
 import Login from './containers/Login/Login';
 import News from './containers/News/News';
 
@@ -24,8 +25,11 @@ class Routes extends React.Component {
         return (
             <BrowserRouter>
                 <React.Fragment>
-                    <Route path={ROUTES.LOGIN} component={Login}/>
-                    <PrivateRoute path={ROUTES.NEWS} component={News}/>
+                    <Switch>
+                        <Route path={ROUTES.LOGIN} component={Login}/>
+                        <PrivateRoute path={ROUTES.NEWS} component={News}/>
+                        <Route path={ROUTES.HOME} component={Home}/>
+                    </Switch>
                 </React.Fragment>
             </BrowserRouter>
         )
